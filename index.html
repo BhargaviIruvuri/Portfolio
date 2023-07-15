@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bhargavi Iruvuri</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleSection('about')"><b>About</b></a></li>
+                <li><a href="#" onclick="toggleSection('education')"><b>Education</b></a></li>
+                <li><a href="#" onclick="toggleSection('skills')"><b>Skills</b></a></li>
+                <li><a href="#" onclick="toggleSection('projects')"><b>Projects</b></a></li>
+                <li><a href="#" onclick="toggleSection('contact')"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="active">
+            <div class="about-content">
+                <h2 style="color: navy">About Me</h2><br>
+                <h3>Aspiring Web Developer</h3><br><br>
+                <p style="font-size: 17px;">I am currently a student at VR Siddhartha Engineering College with CSE background. I possess fundamental understanding of Computer Science concepts.  I have gained practical experience through projects that demonstrate my ability to apply theoretical knowledge to real-world challenges. I am always eager to learn and adapt to new technologies and methodologies. I am currently learning Backend Technolgies and Data Analytics Essentials.</p><br><br>
+                <button class="hire-button" onclick="scrollToSection('contact')">Hire Me</button>
+            </div>
+            <div class="about-image">
+                <img src="D:\Portfolio\Profile.jpg" alt="Bhargavi Iruvuri - Computer Science Engineering Student">
+            </div>
+        </section>
+
+        <section id="education" style="display: none;">
+            <h2 style="color: navy">Education</h2><br>
+            <ul>
+                <li>
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p>CGPA - 8.76 (7th semester)</p>
+                    <p><i>Institution:</i> Velagapudi Ramakrishna Siddhartha Engineering College, Vijayawada <br> (2020 - Present) </p>
+                </li><br>
+                <li>
+                    <h3>Intermediate</h3>
+                    <p>CGPA - 10</p>
+                    <p><i>Institution:</i> Narayana Junior College, Kandukur <br> (2018 - 2020)</p>
+                </li><br>
+                <li>
+                    <h3>SSC</h3>
+                    <p>CGPA - 10</p>
+                    <p><i>Institution:</i> Nagarjuna Vidyalayam, Kandukur <br> (2017 - 2018)</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills" style="display: none;">
+            <h2 style="color: navy">Skills</h2>
+            <div class="skill">
+                <h3>Programming Languages</h3><p>C, Python, Java</p>
+            </div>
+            <div class="skill">
+                <h3>Web Technologies</h3><p>HTML, CSS, JavaScript, Node.js, JQuery</p>
+            </div>
+            <div class="skill">
+                <h3>Computer Science Concepts</h3><p>Machine Learning, Data Structures, DBMS, SQL, Cyber Security Fundamentals</p>
+            </div>
+            <div class="skill">
+                <h3>Tools</h3><p>Android Studio, Jupyter Notebook, Google Cloud, Sublime Text, IDLE, Visual Paradigm</p>
+            </div>
+            <div class="skill">
+                <h3>Soft Skills</h3><p>Adaptability, Time management, Analytical thinking, Continuous learning, Leadership skilld</p>
+            </div>
+        </section>
+
+        <section id="projects" style="display: none;">
+            <h2 style="color: navy">Projects</h2>
+            <div class="project">
+                <h3>Currency Detection App</h3>
+                <p>An android application to detect currency for visually impaired.</p>
+                <p><i>Technologies used: </i>Java, Android Studio, TensorFlow</p>
+                <a href="https://play.google.com/store/apps/details?id=org.tensorflow.lite.snehitha.classification" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Unit Converter</h3>
+                <p>A website to convert to convert temperature from Celsius to Fahrenheit.</p>
+                <p><i>Technologies used: </i>HTML, CSS, JavaScript</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website showcasing my work and skills.</p>
+                <p><i>Technologies used: </i>HTML, CSS, JavaScript</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Enhancement of VGG-16 Architecture</h3>
+                <p>An enhanced VGG16-based CNN for Classification of Cyanobacteria.</p>
+                <p><i>Technologies used: </i>Python, Machine Learning</p>
+            </div>
+            <div class="project">
+                <h3>Music App</h3>
+                <p>Music streaming application model.</p>
+                <p><i>Technologies used: </i>Java, Android Studio</p>
+            </div>
+        </section>
+
+        <section id="contact" style="display: none;">
+            <h2 style="color: navy">Contact</h2>
+            <div class="me">
+                <p>Email</p>
+                <a href="mailto:bhargaviiruvuri@gmail.com" target="_blank">bhargaviiruvuri@gmail.com</a>
+            </div>
+            <div class="me">
+                <p>Phone</p>
+                <a href="tel:+919390379418" target="_blank">+91390379418</a>
+            </div>
+            <div class="me">
+                <p>Website</p>
+                <a href="#" target="_blank">Go to Website</a>
+            </div>
+            <div class="me">
+                <p>LinkedIn</p>
+                <a href="https://www.linkedin.com/in/bhargavi-iruvuri-04a42b215/" target="_blank">Profile</a>
+            </div>
+            <div class="me">
+                <p>Location</p>
+                <p style="font-weight: normal; font-size: 17px;">Vijayawada, India</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

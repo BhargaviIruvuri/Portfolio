@@ -1,0 +1,275 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: black;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: navy;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-bottom: 5px;
+}
+
+.project a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red; /* Change the color on hover if desired */
+}
+
+section#about {
+    display: flex;
+    align-items: flex-start; /* Adjust alignment */
+    justify-content: flex-start; /* Adjust justification */
+    position: relative; /* Add relative positioning */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section#about.active {
+    display: flex; /* Display the active section */
+}
+
+section#about .about-content {
+    width: 72%; /* Adjust width as needed */
+}
+
+section#about .about-image {
+    position: absolute; /* Change to absolute positioning */
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: auto; /* Set height to match parent container */
+    margin-top: 50px;
+    margin-right: 45px;
+}
+
+section#about .about-image img {
+    width: 100%;
+    height: auto;
+}
+
+section#about.active .about-content {
+    margin-right: 220px; /* Create space for the image */
+}
+
+section#about .hire-button {
+    display: inline-block;
+    background-color: navy;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+section#about.active .hire-button {
+    position: sticky;
+    top: 20px;
+    right: 20px;
+    margin-top: 0;
+}
+
+/* Media Query for hiding the photo when window is minimized */
+@media screen and (max-width: 1250px) {
+    section#about .about-image {
+        display: none;
+    }
+
+    section#about.active .about-content {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+section#projects {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: navy;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: red;
+}
+
+section#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.me {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.me:hover {
+    transform: translateY(-5px);
+}
+
+.me p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.me a {
+    color: navy;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.me a:hover {
+    color: red;
+}
+
+section#education {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section#education h2 {
+    margin-bottom: 20px;
+    color: navy;
+}
+
+section#education ul {
+    list-style: none;
+}
+
+section#education li {
+    margin-bottom: 10px;
+}
+
+section#education li h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+section#education li p {
+    margin-bottom: 5px;
+    color: black;
+}
+
+section#skills {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill h3 {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill p {
+    color: black;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
